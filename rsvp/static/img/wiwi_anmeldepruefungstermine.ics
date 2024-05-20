@@ -1,0 +1,242 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//VueSoft//CsvToIcs//EN
+X-WR-RELCALID:4b99d592-fd9c-4e30-984a-6b0a4abd8fe7
+X-WR-TIMEZONE:Europe/Paris
+BEGIN:VTIMEZONE
+TZID:W. Europe Standard Time
+BEGIN:STANDARD
+DTSTART:20221002T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYHOUR=3;BYMINUTE=0;BYMONTH=10
+TZNAME:Mitteleuropäische Zeit
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220301T020000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYHOUR=2;BYMINUTE=0;BYMONTH=3
+TZNAME:Mitteleuropäische Sommerzeit
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+CATEGORIES:Prüfungsamt Wiwi
+DESCRIPTION:Die Anmeldung zu den Modulprüfungen erfolgt in WebRegIs (https:
+ //webregis.fernuni-hagen.de/)\nHinweis: Verbindlich sind allein die Termin
+ angaben auf der Fakultätshomepage!
+DTEND;TZID=W. Europe Standard Time:20231115T100000
+DTSTAMP:20231010T113806Z
+DTSTART;TZID=W. Europe Standard Time:20231115T090000
+SUMMARY:Anmeldezeitraum A1 > Prüfungen P1 + Portfolio > STARTET HEUTE
+UID:bbcc727d-56b2-442c-9e46-ad2c05f06762
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Anmeldezeitraum A1 > Prüfungen P1 + Portfolio > STARTET HEUTE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CATEGORIES:Prüfungsamt Wiwi
+DESCRIPTION:Die Anmeldung zu den Modulprüfungen erfolgt in WebRegIs (https:
+ //webregis.fernuni-hagen.de/)\nHinweis: Verbindlich sind allein die Termin
+ angaben auf der Fakultätshomepage!
+DTEND;VALUE=DATE:20231201
+DTSTAMP:20231010T113806Z
+DTSTART;VALUE=DATE:20231115
+SUMMARY:Anmeldezeitraum A1 > Prüfungen P1 + Portfolio > 15.11.2023 bis 30.1
+ 1.2023
+UID:7045fc3b-7468-4c40-85fd-905b44837af3
+END:VEVENT
+BEGIN:VEVENT
+CATEGORIES:Prüfungsamt Wiwi
+DESCRIPTION:Bis zum Ende dieses Tages\nDie Anmeldung zu den Modulprüfungen 
+ erfolgt in WebRegIs (https://webregis.fernuni-hagen.de/)\nHinweis: Verbind
+ lich sind allein die Terminangaben auf der Fakultätshomepage!
+DTEND;TZID=W. Europe Standard Time:20231130T100000
+DTSTAMP:20231010T113806Z
+DTSTART;TZID=W. Europe Standard Time:20231130T090000
+PRIORITY:1
+SUMMARY:Anmeldezeitraum A1 > Prüfungen P1 + Portfolio > ENDET HEUTE
+UID:26d25a1c-0f71-432c-8c8b-3d06c4ff81b5
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Anmeldezeitraum A1 > Prüfungen P1 + Portfolio > ENDET HEUTE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CATEGORIES:Prüfungsamt Wiwi
+DESCRIPTION:Die Termine für die Modulprüfungen finden Sie in den jeweiligen
+  Moodle-Modulumgebungen (https://moodle-wrm.fernuni-hagen.de/course/index.
+ php?categoryid=7)\nHinweis: Verbindlich sind allein die Terminangaben auf 
+ der Fakultätshomepage!
+DTEND;VALUE=DATE:20231223
+DTSTAMP:20231010T113806Z
+DTSTART;VALUE=DATE:20231218
+LOCATION:
+SUMMARY:Prüfungszeitraum P1 > mündliche Prüfungen > 18.12.2023 bis 22.12.20
+ 23
+UID:e2a8d6d9-8b77-4691-bd60-24e38b2045a4
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Prüfungszeitraum P1 > mündliche Prüfungen > 18.12.2023 bis 22.1
+ 2.2023
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CATEGORIES:Prüfungsamt Wiwi
+DESCRIPTION:Die Bewerbung um die Seminararbeitsplätze erfolgt in WebRegIs (
+ https://webregis.fernuni-hagen.de/)\nHinweis: Verbindlich sind allein die 
+ Terminangaben auf der Fakultätshomepage!
+DTEND;TZID=W. Europe Standard Time:20240101T100000
+DTSTAMP:20231010T113806Z
+DTSTART;TZID=W. Europe Standard Time:20240101T090000
+SUMMARY:Anmeldezeitraum A1 > Seminare > STARTET HEUTE
+UID:eb2e6274-d0b2-4e7b-9f52-15aedf7bdb77
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Anmeldezeitraum A1 > Seminare > STARTET HEUTE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CATEGORIES:Prüfungsamt Wiwi
+DESCRIPTION:Die Bewerbung um die Seminararbeitsplätze erfolgt in WebRegIs (
+ https://webregis.fernuni-hagen.de/)\nHinweis: Verbindlich sind allein die 
+ Terminangaben auf der Fakultätshomepage!
+DTEND;VALUE=DATE:20240116
+DTSTAMP:20231010T113806Z
+DTSTART;VALUE=DATE:20240101
+SUMMARY:Anmeldezeitraum A1 > Seminare > 01.01.2024 bis 15.01.2024
+UID:57fa8fc4-43b9-454a-bef5-ffd0a6b5bcda
+END:VEVENT
+BEGIN:VEVENT
+CATEGORIES:Prüfungsamt Wiwi
+DESCRIPTION:Bis zum Ende dieses Tages\nDie Bewerbung um die Seminararbeitsp
+ lätze erfolgt in WebRegIs (https://webregis.fernuni-hagen.de/)\nHinweis: V
+ erbindlich sind allein die Terminangaben auf der Fakultätshomepage!
+DTEND;TZID=W. Europe Standard Time:20240115T100000
+DTSTAMP:20231010T113806Z
+DTSTART;TZID=W. Europe Standard Time:20240115T090000
+PRIORITY:1
+SUMMARY:Anmeldezeitraum A1> Seminare > ENDET HEUTE
+UID:02af65b7-f4f3-461d-8b50-06c7dc915ecf
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Anmeldezeitraum A1> Seminare > ENDET HEUTE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CATEGORIES:Prüfungsamt Wiwi
+DESCRIPTION:Die Anmeldung zu den Modulprüfungen erfolgt in WebRegIs (https:
+ //webregis.fernuni-hagen.de/)\nHinweis: Verbindlich sind allein die Termin
+ angaben auf der Fakultätshomepage!
+DTEND;TZID=W. Europe Standard Time:20240215T100000
+DTSTAMP:20231010T113806Z
+DTSTART;TZID=W. Europe Standard Time:20240215T090000
+SUMMARY:Anmeldezeitraum A2 > Prüfungen P2 > STARTET HEUTE
+UID:006f2243-3387-46d1-8eb1-0129c8ceb60b
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Anmeldezeitraum A2 > Prüfungen P2 > STARTET HEUTE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CATEGORIES:Prüfungsamt Wiwi
+DESCRIPTION:Die Bewerbung um die Abschlussarbeitsplätze erfolgt in WebRegIs
+  (https://webregis.fernuni-hagen.de/)\nHinweis: Verbindlich sind allein di
+ e Terminangaben auf der Fakultätshomepage!
+DTEND;TZID=W. Europe Standard Time:20240215T110000
+DTSTAMP:20231010T113806Z
+DTSTART;TZID=W. Europe Standard Time:20240215T100000
+SUMMARY:Anmeldezeitraum A2 > Abschlussarbeiten > STARTET HEUTE
+UID:2135091c-f3de-43d7-8e49-9b9f6640c94f
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Anmeldezeitraum A2 > Abschlussarbeiten > STARTET HEUTE
+TRIGGER:-P1DT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CATEGORIES:Prüfungsamt Wiwi
+DESCRIPTION:Die Anmeldung zu den Modulprüfungen erfolgt in WebRegIs (https:
+ //webregis.fernuni-hagen.de/)\nHinweis: Verbindlich sind allein die Termin
+ angaben auf der Fakultätshomepage!
+DTEND;VALUE=DATE:20240301
+DTSTAMP:20231010T113806Z
+DTSTART;VALUE=DATE:20240215
+SUMMARY:Anmeldezeitraum A2 > Prüfungen P2 > 15.02.2024 bis 29.02.2024
+UID:0ffa0a1d-9bbe-4274-b9e2-f68120ad5779
+END:VEVENT
+BEGIN:VEVENT
+CATEGORIES:Prüfungsamt Wiwi
+DESCRIPTION:Die Bewerbung um die Abschlussarbeitsplätze erfolgt in WebRegIs
+  (https://webregis.fernuni-hagen.de/)\nHinweis: Verbindlich sind allein di
+ e Terminangaben auf der Fakultätshomepage!
+DTEND;VALUE=DATE:20240301
+DTSTAMP:20231010T113806Z
+DTSTART;VALUE=DATE:20240215
+SUMMARY:Anmeldezeitraum A2 > Abschlussarbeiten > 15.02.2024 bis 29.02.2024
+UID:9b8ce38c-f00d-4e8d-879b-2d87544ae354
+END:VEVENT
+BEGIN:VEVENT
+CATEGORIES:Prüfungsamt Wiwi
+DESCRIPTION:Bis zum Ende dieses Tages\nDie Anmeldung zu den Modulprüfungen 
+ erfolgt in WebRegIs (https://webregis.fernuni-hagen.de/)\nHinweis: Verbind
+ lich sind allein die Terminangaben auf der Fakultätshomepage!
+DTEND;TZID=W. Europe Standard Time:20240229T100000
+DTSTAMP:20231010T113806Z
+DTSTART;TZID=W. Europe Standard Time:20240229T090000
+PRIORITY:1
+SUMMARY:Anmeldezeitraum A2 > Prüfungen P2 > ENDET HEUTE
+UID:630e3375-562c-4212-96f7-25e897b328bc
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Anmeldezeitraum A2 > Prüfungen P2 > ENDET HEUTE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CATEGORIES:Prüfungsamt Wiwi
+DESCRIPTION:Bis zum Ende dieses Tages\nDie Bewerbung um die Abschlussarbeit
+ splätze erfolgt in WebRegIs (https://webregis.fernuni-hagen.de/)\nHinweis:
+  Verbindlich sind allein die Terminangaben auf der Fakultätshomepage!
+DTEND;TZID=W. Europe Standard Time:20240229T110000
+DTSTAMP:20231010T113806Z
+DTSTART;TZID=W. Europe Standard Time:20240229T100000
+PRIORITY:1
+SUMMARY:Anmeldezeitraum A2 > Abschlussarbeiten > ENDET HEUTE
+UID:54df595c-4326-4ee6-b447-941d87ea8f34
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Anmeldezeitraum A2 > Abschlussarbeiten > ENDET HEUTE
+TRIGGER:-P1DT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CATEGORIES:Prüfungsamt Wiwi
+DESCRIPTION:Die Termine für die Modulprüfungen finden Sie in den jeweiligen
+  Moodle-Modulumgebungen (https://moodle-wrm.fernuni-hagen.de/course/index.
+ php?categoryid=7)\nHinweis: Verbindlich sind allein die Terminangaben auf 
+ der Fakultätshomepage!
+DTEND;VALUE=DATE:20240321
+DTSTAMP:20231010T113806Z
+DTSTART;VALUE=DATE:20240311
+LOCATION:
+SUMMARY:Prüfungszeitraum P2 > Klausuren\, mündl. und Portfolio-Prüfungen > 
+ 11.03.2024 - 27.03.2024
+UID:4f213bd1-df3a-40e7-a407-6ba377755840
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Prüfungszeitraum P2 > Klausuren\, mündl. und Portfolio-Prüfunge
+ n > 11.03.2024 - 27.03.2024
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

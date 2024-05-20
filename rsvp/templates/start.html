@@ -1,0 +1,214 @@
+<!-- star.html -->
+{% load static %} 
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Franzi wird 30!">
+    <meta property="og:description" content="Partyseite">
+    <title>Willkommen zur Party!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="{% static 'party.ico' %}" type="image/x-icon">
+
+    <style>
+
+        h1 {
+            font-size: 70px; /* Hier kannst du die gewünschte Schriftgröße in Pixeln angeben */
+        }
+
+        .header h1 {
+            font-size: 70px; /* Vergrößere die Schriftgröße auf 80px */
+            margin-bottom: 20px;
+            color: #003B46;
+            font-family: 'Vidaloka', serif;
+            display: inline-block; /* Damit die Schrift in der Mitte bleibt */
+        }
+
+        body {
+            background-image: url('{% static 'img/test2.jpg' %}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Vidaloka', serif;
+            color: #07575B;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+       
+
+        .container {
+            font-size:16px;
+            background-color: rgba(249,232,210, 0.9); /* Hintergrundfarbe mit 60% Transparenz */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 10px; /* Abstand um den Header-Text */
+            max-width: auto; /* Maximale Breite des Containers */
+            max-height: auto; /* Maximale Höhe des Containers */
+            overflow: hidden; 
+            margin: 0 auto; /* Zentriert den Container auf der Seite */
+        }
+
+        .image {
+            padding: 10px; /* Abstand um den Header-Text */
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: -30px auto 20px; /* Negatives Margin für den oberen Rand */
+        }
+
+        .header {
+            background-image:url('{% static 'img/test2.jpg' %}');
+            background-size: cover;
+            background-position: top center; 
+            background-position-y: 50%;
+            color: #003B46;
+            text-align: center;
+            padding: 220px 0;
+            position: relative;
+            font-family: 'Vidaloka', serif; 
+        }
+
+    
+
+        .button-container {
+            text-align: center; /* Zentriert den Button */
+        }
+
+
+        .button.button-primary {
+            padding: 10px 20px;
+            background-color: #07575B;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            display: inline-block; /* Mache den Button zu einem inline-Block-Element */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            animation: bounce 1s infinite; 
+        }
+
+        .button.button-primary:hover {
+            background-color: #003B46;;
+        }
+
+        .container h2,
+        .container h1,
+        .container p,
+        .container ul {
+            color: #003B46; /* Hier kannst du die Schriftfarbe anpassen */
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0); /* Start und Endpunkt: keine Bewegung */
+            }
+            40% {
+                transform: translateY(-30px); /* Mittelpunkt: nach oben bewegen */
+            }
+            60% {
+                transform: translateY(-15px); /* Höchster Punkt: wieder nach unten bewegen */
+            }
+        }
+
+        @media (max-width: 767px) {
+            .header {
+                padding: 50px 0; /* Verringere den oberen und unteren Abstand im Header */
+                background-position-y: 50%; /* Setze die vertikale Position des Hintergrundbilds in der Mitte */
+            }
+        
+            .header h1 {
+                font-size: 2em; /* Verkleinere die Schriftgröße für den Header-Titel */
+                margin-bottom: 10px; /* Verkleinere den unteren Abstand */
+            }
+        
+            .hearts {
+                font-size: 16px; /* Verkleinere die Herzchen */
+                margin: 10px 0;
+            }
+        
+            .date {
+                font-size: 24px; /* Verkleinere die Schriftgröße des Datums */
+            }
+        
+            .section {
+                padding: 30px 0; /* Verringere den Abstand in den Abschnitten */
+            }
+        
+            .container p {
+                font-size: 1em; /* Verkleinere den Text innerhalb der Container */
+                margin-bottom: 10px;
+            }
+
+            .container h1 {
+                font-size: 1.5em; /* Verkleinere den Text innerhalb der Container */
+                margin-bottom: 10px;
+            }
+        
+
+            .container h2 {
+                font-size: 1em; /* Verkleinere den Text innerhalb der Container */
+                margin-bottom: 10px;
+            }
+
+            .container {
+                padding: 10px; /* Abstand um den Header-Text */
+                max-width: 90%; /* Maximale Breite des Containers */
+                max-height: 80%; /* Maximale Höhe des Containers */
+            z-index: 1;
+        }
+        
+
+            ul {
+                font-size: 1em; /* Verkleinere den Text innerhalb der Listen */
+            }
+        
+            iframe {
+                max-width: 100%; /* Sorge dafür, dass die Karte nicht breiter als der Container ist */
+                height: auto; /* Skaliere die Höhe entsprechend */
+            }
+        
+            /* Setze den Text in der Navbar auf eine angemessene Größe */
+            .navbar-nav .nav-link {
+                font-size: 1em !important;
+            }
+        
+            /* Optional: Verkleinere den Platz zwischen den Navbar-Links */
+            .navbar-nav .nav-item {
+                margin: 0 5px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    
+    
+
+  
+        <div class="container">
+            <div class="py-5">
+            <img src="{% static 'img/party.png' %}" alt="Bild" class="image">
+            <h1>Disco Disco Party Party!</h1>
+            <div class="button-container">
+                <a class="button button-primary" href="/index/">Weiter</a>
+            </div>
+        </div>
+    
+    
+    
+
+    
+</body>
+</html>

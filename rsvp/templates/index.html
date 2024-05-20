@@ -1,0 +1,250 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Franzi wird 30!">
+    <meta property="og:description" content="Partyseite">
+    <title>Meine Party </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'party.ico' %}" type="image/x-icon">
+
+
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <div class="konfetti-container" id="konfettiContainer">
+        <div class="konfetti"></div>
+    </div>
+
+
+ <div class="header-container">
+    <div class="header">
+        <div class="container-fluid text-center">
+            <img src="{% static 'img/geschenk.png' %}" alt="Bild" class="image">
+            <h1>Einladung</h1>
+            <div class="line-container">
+                <div class="line"></div>
+                </div>
+                     <div class="date">
+                        25. November 2025
+                    </div>
+            </div>
+         </div>
+        </div>
+    </div>   
+
+    
+ <main>
+    
+            <!-- Inhalt der Seite -->
+         <section id="info" class="section">
+            <div class="container">
+                <div class="py-5">
+                    <div class="row">
+                        <div class="container-fluid text-center">
+                            <img src="{% static 'img/info.png' %}" alt="Bild" class="image">
+                            <h2>Informationen</h2>
+                            <p> Hallo ihr Lieben, <br>
+                                die wilden Jahre sind vorbei und nun trifft es auch mich: 
+                                Die 3 steht vorne und das muss gefeiert werden! 
+                                Daher lade ich euch herzlich ein, mit mir den Eintritt ins richtige Erwachsenenalter, 
+                                in dem der körperliche Zerfall mit jedem Tag spürbarer wird (zumindest laut Aussagen von Leuten, 
+                                die die 30 bereits passiert haben), zu feiern.
+                            </p>
+                        <p><b><u>Hier gehts ab:</u></b></p>
+                        <ul>
+                            <li><b>Datum:</b> 25. November 2023</li>
+                            <li><b>Ort:</b> In Dortmund</li>
+                            <li><b>Uhrzeit:</b> ab 19.00 Uhr</li>
+                            <li><b>Hinweise:</b> Für das leibliche Wohl ist gesorgt.</li>
+                            <!-- Weitere Informationen hier einfügen -->
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+         <section id="location" class="section">
+                <div class="container">
+                    <div class="py-5">
+                        <div class="row">
+                          <div class="container-fluid text-center">
+                            <img src="{% static 'img/m3.png' %}" alt="Bild" class="image">
+                                        <h2>Location</h2>
+                                        <p> Die Party steigt bei mir zu Hause.
+                                        Hier findest du mich:</p>
+                                        <!-- Hier füge den eingebetteten Karten-Code ein -->
+                    <a href="https://www.google.com/maps/place/Phoenix-See/@51.4893136,7.5081686,17z/data=!3m1!4b1!4m6!3m5!1s0x47b91703be6bd6bd:0x12fad52b65887668!8m2!3d51.4907224!4d7.513473!16s%2Fg%2F120x5qnt?entry=ttu" target="_blank" class="button button-primary">Zu Google Maps</a>
+                    </div>
+                </div>
+                </div>
+             </div>
+             <!-- Hier kommt der Inhalt für "Infos" hin -->
+          </section>
+
+          <section id="kontakt" class="section">
+            <div class="container">
+                <div class="py-5">
+                    <div class="container-fluid text-center">
+                        <div class="row">
+                            <div class="container-fluid text-center">
+                                <img src="{% static 'img/contact.png' %}" alt="Bild" class="image">
+                                <h2>Kontakt</h2>
+                                <p>Hast du Fragen oder benötigst weitere Informationen? Kontaktiere mich gern!</p>
+                                <div class="contact-icons">
+                                    <a href="tel:+49123456789"><img src="{% static 'img/phone.png' %}" alt="Anrufen"></a>
+                                    <a href="https://wa.me/+4912345678"><img src="{% static 'img/whatsapp.png' %}" alt="WhatsApp"></a>
+                                    <a href="mailto:dasisteinTest@Test.com"><img src="{% static 'img/email.png' %}" alt="E-Mail"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="countdown" class="section">
+            <div class="container">
+                <div class="py-5">
+                    <div class="row">
+                        <div class="container-fluid text-center">
+                        <img src="{% static 'img/count.png' %}" alt="Bild" class="image">
+                                <h2>Countdown bis zur Party</h2>
+                                <div id="countdown-timer"></div>
+                                <button id="addToCalendarButton">Zu Kalender hinzufügen</button>
+                                <input type="hidden" id="icalFileName" value="{% static 'img/party.ics' %}">
+                        </div>  
+                    </div>
+                </div>
+            </div>
+         </section>
+     
+
+        <section id="vote" class="section">
+            <div class="container">
+
+                <div class="py-5">
+
+           <div class="container-fluid text-center">
+                <img src="{% static 'img/check.png' %}" alt="Bild" class="image">
+                <h2>Abstimmung</h2>
+                <p>Bitte gib mir Bescheid, ob du zu meiner Party kommen wirst:</p>
+                <form action="{% url 'index' %}" method="post">
+                    {% csrf_token %}
+                    <label for="name">Dein Vor- und Nachname:</label>
+                    <input type="text" id="name" name="name" required><br>
+        
+                    <label for="attendance">Nimmst du teil?</label>
+                    <select id="attendance" name="attendance" required>
+                        <option value="Ich nehme teil">Ich nehme teil</option>
+                        <option value="Ich nehme nicht teil">Ich nehme nicht teil</option>
+                    </select><br>
+        
+                    <label for="drink">Getränkeauswahl:</label><br>
+                    <div class="drinks-container">
+                        <div class="drinks-row">
+                            <input type="checkbox" id="bier" name="drinks" value="Bier" class="drink-checkbox">
+                            <label for="bier"> Bier</label>
+                            <input type="checkbox" id="wein" name="drinks" value="Wein" class="drink-checkbox">
+                            <label for="sekt"> Wein</label>
+                            <input type="checkbox" id="limo" name="drinks" value="Limo" class="drink-checkbox">
+                            <label for="wein"> Limo</label>
+                        </div>
+                    </div>
+        
+                    <button type="submit">Absenden</button>
+                </form>
+            </div>
+        </div>
+        </div>
+        </section> 
+    </div> 
+
+    <footer> 
+        <p>Ich freue mich auf dich!</p>
+    </footer>
+     <script>
+
+             // Setze das Datum (Jahr, Monat (0-basiert), Tag, Stunde, Minute, Sekunde)
+        var birthDate = new Date(2025, 10, 25 ,18, 0, 0); 
+    
+        function updateCountdown() {
+            var now = new Date();
+            var timeRemaining = birthDate - now;
+    
+            var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+    
+            var countdownElement = document.getElementById("countdown-timer");
+            countdownElement.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    
+            if (timeRemaining <= 0) {
+                countdownElement.innerHTML = "Die Party ist jetzt!";
+            }
+        }
+        // Aktualisiere den Countdown alle 1 Sekunde
+        setInterval(updateCountdown, 1000);
+
+
+        document.getElementById('attendance').addEventListener('change', function() {
+            var drinksCheckboxes = document.querySelectorAll('.drink-checkbox');
+    
+            if (this.value === 'Ich nehme nicht teil') {
+                drinksCheckboxes.forEach(function(checkbox) {
+                    checkbox.disabled = true;
+                });
+            } else {
+                drinksCheckboxes.forEach(function(checkbox) {
+                    checkbox.disabled = false;
+                });
+            }
+        });
+
+
+        document.getElementById('addToCalendarButton').addEventListener('click', function() {
+            var icalURL = document.getElementById('icalFileName').value; // Stelle sicher, dass die URL korrekt ist.
+            var link = document.createElement('a');
+          
+            // Setze die URL der iCal-Datei
+            link.href = icalURL;
+            link.download = 'party.ics';
+          
+            link.click();
+          });
+        
+        
+            document.addEventListener('DOMContentLoaded', function() {
+            var konfettiContainer = document.getElementById('konfettiContainer');
+        
+            for (var i = 0; i < 100; i++) {
+                var konfetti = document.createElement('div');
+                konfetti.classList.add('konfetti');
+                konfetti.style.left = Math.random() * 100 + 'vw';
+                konfetti.style.animationDuration = (Math.random() * 1 + 0.5) + 's';
+                konfettiContainer.appendChild(konfetti);
+            }
+         });
+
+
+
+     </script>
+        
+            
+    </main>
+
+  
+       <!-- Bootstrap JS und jQuery -->
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

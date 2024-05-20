@@ -1,0 +1,505 @@
+
+body {
+    background-image: url('../img/bildn.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Vidaloka', serif;
+    color: #003B46;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0);
+    background-position: center; 
+    background-position-y: 50%;
+    color: #003B46;
+    padding: 40px 0;
+    position: relative;
+    font-family: 'Vidaloka', serif; 
+}
+.header h1 {
+    margin: 10px; 
+    font-size: 70px; /* Vergrößere die Schriftgröße */
+    margin-bottom: 20px;
+    color: #003B46;
+    font-family: 'Vidaloka', serif;
+    display: inline-block; /* Damit die Schrift in der Mitte bleibt */
+}
+
+.header-container {
+    background-color: rgba(249,232,210, 0.9); /* Hintergrundfarbe mit 60% Transparenz */
+    padding: 20px; /* Abstand um den Header-Text */
+    justify-content: center;
+    align-items: center;
+    max-width: 600px; /* Maximale Breite des Containers */
+    max-height: auto; /* Maximale Höhe des Containers */
+    overflow: hidden; 
+    margin: auto auto; /* Zentriert den Container auf der Seite */
+    margin-bottom: 20%; 
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(249,232,210, 0.9); /* Hintergrundfarbe mit 60% Transparenz */
+    padding: 20px; /* Abstand um den Header-Text */
+    max-width: 800px; /* Maximale Breite des Containers */
+    max-height: auto; /* Maximale Höhe des Containers */
+    overflow: hidden; 
+    margin: 0 auto; /* Zentriert den Container auf der Seite */
+    display: flex;
+    flex-direction: column;
+}
+
+.line-container {
+    display: flex;
+    justify-content: flex-end; /* Ändere die Ausrichtung zu flex-end */
+    margin-bottom: 30px;
+    width: 100%; 
+    color: #003B46;
+}
+
+.header-image {
+    padding: 20px; /* Abstand um den Header-Text */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: -100px auto 10px; /* Negatives Margin für den oberen Rand */
+}
+
+.image {
+    padding: 10px; /* Abstand um den Header-Text */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: -30px auto 20px; /* Negatives Margin für den oberen Rand */
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to center, white 50%, transparent 50%) 1;
+}
+
+.date {
+    font-size: 40px;
+}
+
+main {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label, input, select {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    color: #003B46;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #07575B;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #003B46;;
+}
+
+.button.button-primary {
+    padding: 10px 20px;
+    background-color: #07575B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    display: inline-block; /* Mache den Button zu einem inline-Block-Element */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button.button-primary:hover {
+    background-color: #003B46;;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+.section {
+    padding: 10px 0; /* Hier kannst du den Abstand anpassen */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li::before {
+    content: "\2022";  /* Füge den Bullet Point hinzu */
+    color: transparent; /* Mache den Bullet Point transparent */
+    display: inline-block;
+    width: 1em; /* Abstand zwischen Bullet Point und Text */
+    margin-left: -1em; /* Korrigiere den Abstand */
+}
+
+.container h2,
+.container p,
+.container ul {
+    color: #003B46; /* Hier kannst du die Schriftfarbe anpassen */
+}
+
+.navbar-nav .nav-link {
+    color: #003B46 !important; /* !important überschreibt andere Stile */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.drinks-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.drinks-container label {
+    margin-right: 20px; /* Hier kannst du den Abstand anpassen */
+}
+
+
+.drinks-row {
+    display: flex;
+    margin-bottom: 10px; /* Hier den Abstand zwischen den Zeilen anpassen */
+    align-items: center; /* Vertikale Ausrichtung der Elemente */
+}
+
+.drinks-row label {
+    margin-right: 50px; /* Setze den äußeren Abstand der Label zurück */
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.konfetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    animation: konfettiAnimation 3s linear forwards;
+}
+
+.konfetti {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #f00;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    animation: konfettiFallen 1s linear infinite;
+    opacity: 0;
+}
+
+
+@keyframes konfettiAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes konfettiFallen {
+    0% {
+        transform: translateY(0) rotateZ(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotateZ(720deg);
+        opacity: 0;
+    }
+}
+
+
+.konfetti:nth-child(1) {
+    background-color: #FFDD00; /* Gelb */
+    animation-duration: 4s;
+}
+
+.konfetti:nth-child(2) {
+    background-color: #FF4136; /* Rot */
+    animation-duration: 4s;
+}
+
+.konfetti:nth-child(3) {
+    background-color: #0074D9; /* Blau */
+    animation-duration: 4s;
+}
+
+
+.konfetti:nth-child(4) {
+    background-color: #2ECC40; /* Grün */
+    animation-duration: 4s;
+}
+
+.konfetti:nth-child(5) {
+    background-color: #FF851B; /* Orange */
+    animation-duration: 4s;
+}
+
+.contact-icons a {
+    margin-right: 20px; /* Füge hier den gewünschten Abstand hinzu */
+}
+
+
+/* Füge so viele Konfetti-Farben hinzu, wie du möchtest */
+
+
+/* Media Query für Smartphones */
+
+@media (max-width: 767px) {
+
+body {
+background-image: none;
+}
+
+.background-image {
+    background-image: url('../img/hklein.jpg');
+position: fixed; /* Important */
+top: 0px;
+left: 0px;
+z-index: -1; 
+height: 100vh;
+width: 100%;
+opacity: 0.8;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: scroll;
+}
+
+
+.header-container {
+padding: 10px;
+text-align: center; /* Zentriert den Text */
+max-width: 250px;
+max-height: 300px;  /* Maximale Breite des Containers */
+margin: auto; /* Zentriert den Container horizontal */
+margin-top: 100%; /* Zentriert den Container vertikal */
+transform: translateY(-50%);
+}
+
+
+.container {
+padding: 20px; /* Abstand um den Header-Text */
+max-width: 100%; /* Maximale Breite des Containers */
+max-height: auto; /* Maximale Höhe des Containers */
+z-index: 1;
+}
+
+.header h1 {
+font-size: 2em; /* Verkleinere die Schriftgröße für den Header-Titel */
+margin-bottom: 10px; /* Verkleinere den unteren Abstand */
+text-align: center; 
+}
+
+.drinks-row {
+display: flex;
+margin-bottom: 10px; /* Hier den Abstand zwischen den Zeilen anpassen */
+align-items: right; /* Vertikale Ausrichtung der Elemente */
+}
+
+.drinks-row label {
+margin-right: 10px; /* Setze den äußeren Abstand der Label zurück */
+}
+
+.date {
+font-size: 24px; /* Verkleinere die Schriftgröße des Datums */
+}
+
+.section {
+padding: 30px 0; /* Verringere den Abstand in den Abschnitten */
+}
+
+.container p {
+font-size: 1em; /* Verkleinere den Text innerhalb der Container */
+margin-bottom: 10px;
+}
+
+ul {
+font-size: 1em; /* Verkleinere den Text innerhalb der Listen */
+}
+
+iframe {
+max-width: 100%; /* Sorge dafür, dass die Karte nicht breiter als der Container ist */
+height: auto; /* Skaliere die Höhe entsprechend */
+}
+
+/* Setze den Text in der Navbar auf eine angemessene Größe */
+.navbar-nav .nav-link {
+font-size: 1em !important;
+}
+
+/* Optional: Verkleinere den Platz zwischen den Navbar-Links */
+.navbar-nav .nav-item {
+margin: 0 5px;
+}
+
+
+
+/* Optional: Passe die Breite der Checkboxen an */
+.drink-checkbox {
+width: 20px; /* Automatische Breite */
+height: 20px; /* Automatische Breite */
+}
+
+.drink-checkbox input[type="checkbox"] {
+width: 40px; /* Ändere die Breite der Checkbox */
+height: 40px; /* Ändere die Höhe der Checkbox */
+}
+
+.section.media p {
+font-size: 2em; /* Ändere die Schriftgröße nach Bedarf */
+}
+
+}
+
+/* iPad Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+body {
+background-image: none;
+}
+
+.background-image {
+background-image: url('../img/hklein.jpg');
+position: fixed; /* Important */
+top: 0px;
+left: 0px;
+z-index: -1; 
+height: 100vh;
+width: 100%;
+opacity: 0.8;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: scroll;
+}
+
+
+.header-container {
+padding: 30px;
+text-align: center; /* Zentriert den Text */
+max-width: 600px;
+max-height: 700px;  /* Maximale Breite des Containers */
+margin: auto; /* Zentriert den Container horizontal */
+margin-top: 70%; /* Zentriert den Container vertikal */
+margin-bottom: 50%; /* Zentriert den Container vertikal */
+transform: translateY(-50%);
+}
+
+
+.container {
+padding: 50px; /* Abstand um den Header-Text */
+max-width: 90%; /* Maximale Breite des Containers */
+max-height: auto; /* Maximale Höhe des Containers */
+z-index: 1;
+}
+
+.header h1 {
+font-size: 2em; /* Verkleinere die Schriftgröße für den Header-Titel */
+margin-bottom: 30px; /* Verkleinere den unteren Abstand */
+text-align: center; 
+}
+
+
+.date {
+font-size: 24px; /* Verkleinere die Schriftgröße des Datums */
+}
+
+.section {
+padding: 30px 0; /* Verringere den Abstand in den Abschnitten */
+}
+
+.container p {
+font-size: 1em; /* Verkleinere den Text innerhalb der Container */
+margin-bottom: 50px;
+}
+
+ul {
+font-size: 1em; /* Verkleinere den Text innerhalb der Listen */
+}
+
+iframe {
+max-width: 100%; /* Sorge dafür, dass die Karte nicht breiter als der Container ist */
+height: auto; /* Skaliere die Höhe entsprechend */
+}
+
+/* Setze den Text in der Navbar auf eine angemessene Größe */
+.navbar-nav .nav-link {
+font-size: 1em !important;
+}
+
+/* Optional: Verkleinere den Platz zwischen den Navbar-Links */
+.navbar-nav .nav-item {
+margin: 0 5px;
+}
+
+
+
+
+
+/* Optional: Passe die Breite der Checkboxen an */
+.drink-checkbox {
+width: 40px; /* Automatische Breite */
+height: 40px; /* Automatische Breite */
+}
+
+.drink-checkbox input[type="checkbox"] {
+width: 50px; /* Ändere die Breite der Checkbox */
+height: 50px; /* Ändere die Höhe der Checkbox */
+}
+
+.section.media p {
+font-size: 2em; /* Ändere die Schriftgröße nach Bedarf */
+}
+
+
+}
